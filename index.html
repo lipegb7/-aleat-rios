@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Bets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <div class="logo">
+                <span>🎯</span> NUMBER <strong>BETS</strong>
+            </div>
+
+            <div class="saldo">
+                Saldo: <span id="saldo">1000</span> 🪙
+            </div>
+        </header>
+
+        <main>
+
+            <section class="hero">
+                <p class="tag">JOGO VIRTUAL</p>
+                <h1>Escolha seu número</h1>
+                <p>Tente acertar o número sorteado e multiplique seus créditos!</p>
+            </section>
+
+            <section class="game">
+
+                <div class="resultado-box">
+                    <p>NÚMERO SORTEADO</p>
+                    <div id="numeroSorteado">?</div>
+                </div>
+
+                <div class="aposta-area">
+
+                    <label for="numero">Escolha um número de 1 a 10</label>
+
+                    <div class="numeros" id="numeros">
+                        <button data-numero="1">1</button>
+                        <button data-numero="2">2</button>
+                        <button data-numero="3">3</button>
+                        <button data-numero="4">4</button>
+                        <button data-numero="5">5</button>
+                        <button data-numero="6">6</button>
+                        <button data-numero="7">7</button>
+                        <button data-numero="8">8</button>
+                        <button data-numero="9">9</button>
+                        <button data-numero="10">10</button>
+                    </div>
+
+                    <label for="valorAposta">Valor da aposta virtual</label>
+
+                    <div class="valor-container">
+                        <input
+                            type="number"
+                            id="valorAposta"
+                            min="10"
+                            max="1000"
+                            value="50"
+                        >
+                        <span>🪙</span>
+                    </div>
+
+                    <button id="apostarBtn" class="apostar">
+                        APOSTAR AGORA
+                    </button>
+
+                </div>
+
+                <div id="mensagem" class="mensagem">
+                    Escolha um número para começar!
+                </div>
+
+            </section>
+
+            <section class="historico">
+                <h2>📊 Histórico</h2>
+
+                <div id="historicoLista">
+                    <p class="vazio">Nenhuma aposta realizada.</p>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>🎮 Jogo demonstrativo com créditos virtuais.</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
